@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# পড়াশোনা সহায়ক - Frontend
 
-## Getting Started
+HSC ও SSC শিক্ষার্থীদের জন্য AI-চালিত স্টাডি প্ল্যাটফর্মের ফ্রন্টএন্ড অ্যাপ্লিকেশন।
 
-First, run the development server:
+## প্রযুক্তি ব্যবহৃত হয়েছে
+- Next.js (App Router) + TypeScript
+- Tailwind CSS
+- TanStack Query
+- Framer Motion
 
+## মূল ফিচারসমূহ
+- JWT ও Google OAuth authentication (ডেমো লগইনসহ)
+- নোট শেয়ারিং, ফিল্টারিং, সার্চ, রেটিং
+- AI ফ্ল্যাশকার্ড/MCQ জেনারেটর (স্কোর ট্র্যাকিংসহ)
+- স্ট্রিমিং AI টিউটর চ্যাট
+- ব্যক্তিগত ড্যাশবোর্ড
+
+## ইনস্টলেশন ও রান
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+অ্যাপ চালু হবে http://localhost:3000 এ।
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## এনভায়রনমেন্ট ভ্যারিয়েবল
+## ডেভেলপার
+Nur A Arfin
