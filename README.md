@@ -25,3 +25,6 @@ npm run dev
 ## এনভায়রনমেন্ট ভ্যারিয়েবল
 ## ডেভেলপার
 Nur A Arfin
+
+## API রুট ব্যবহার
+ফ্রন্টএন্ড axios instance দিয়ে backend API-এর সাথে যোগাযোগ করে।
