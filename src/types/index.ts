@@ -69,3 +69,5 @@ export interface ChatSessionSummary {
   createdAt: string;
   updatedAt: string;
 }
+
+// TypeScript interfaces shared across the frontend
