@@ -27,3 +27,5 @@ api.interceptors.response.use(
 );
 
 export default api;
+
+// Axios instance configured with base URL and auth interceptor
