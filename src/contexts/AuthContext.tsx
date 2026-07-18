@@ -85,3 +85,5 @@ export function useAuth() {
   if (!ctx) throw new Error("useAuth অবশ্যই AuthProvider এর ভেতরে ব্যবহার করতে হবে");
   return ctx;
 }
+
+// Provides authentication state across the application
