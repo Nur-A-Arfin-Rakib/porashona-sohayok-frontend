@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* ---- Porashona Sohayok Design Tokens ---- */
+  /* Paper: soft ivory answer-script paper */
+  --color-paper: #fdfbf4;
+  --color-paper-alt: #f7f2e6;
+  /* Ink navy: ballpoint pen headings */
+  --color-ink: #1b2a4a;
+  --color-ink-soft: #33456b;
+  /* Margin red: the red rule line on exam scripts, primary accent */
+  --color-margin: #c0392b;
+  --color-margin-soft: #e07a6c;
+  /* Marigold: highlighter accent, used sparingly */
+  --color-marigold: #f0b429;
+  /* Ruled line grey-blue */
+  --color-ruled: #c7d1e0;
+  --color-charcoal: #2b2b2b;
+  --color-muted: #6b7280;
+
+  --background: var(--color-paper);
+  --foreground: var(--color-charcoal);
+
+  --font-display: "Noto Serif Bengali", "Noto Serif", serif;
+  --font-body: "Hind Siliguri", "Inter", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper: var(--color-paper);
+  --color-paper-alt: var(--color-paper-alt);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-margin: var(--color-margin);
+  --color-margin-soft: var(--color-margin-soft);
+  --color-marigold: var(--color-marigold);
+  --color-ruled: var(--color-ruled);
+  --color-charcoal: var(--color-charcoal);
+  --color-muted: var(--color-muted);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.ruled-paper {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 35px,
+    var(--color-ruled) 35px,
+    var(--color-ruled) 36px
+  );
+}
+
+.margin-line {
+  position: relative;
+}
+.margin-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 56px;
+  width: 2px;
+  background: var(--color-margin-soft);
+  opacity: 0.55;
+}
+
+.script-card {
+  background: var(--color-paper);
+  border: 1px solid rgba(27, 42, 74, 0.1);
+  box-shadow: 0 1px 2px rgba(27, 42, 74, 0.04), 0 8px 20px -12px rgba(27, 42, 74, 0.15);
+  border-radius: 10px;
+}
+
+.torn-divider {
+  border: none;
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-ruled) 0,
+    var(--color-ruled) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-margin);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
