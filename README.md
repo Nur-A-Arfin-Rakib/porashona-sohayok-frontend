@@ -31,3 +31,6 @@ Nur A Arfin
 
 ## রেসপন্সিভ ডিজাইন
 মোবাইল, ট্যাবলেট ও ডেস্কটপ - সব ডিভাইসে সম্পূর্ণ রেসপন্সিভ।
+
+## ফোল্ডার স্ট্রাকচার
+src/app - Next.js pages, src/components - reusable UI, src/contexts - React context, src/lib - API and utils।
